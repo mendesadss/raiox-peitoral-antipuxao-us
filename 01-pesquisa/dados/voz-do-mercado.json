@@ -1,0 +1,41 @@
+{
+  "coletadoEm": "2026-10-29",
+  "idioma": "en",
+  "mercado": "US",
+  "fontes": [
+    { "url": "https://reddit.sentinel-team.org/posts/1qwt0l1/snapshots/2026-02-06T05%3A20%3A55.08143Z", "tipo": "espelho de thread do r/dogs (\"Favorite Harnesses?\")" },
+    { "url": "https://www.whole-dog-journal.com/?p=635107", "tipo": "guia de ajuste (Whole Dog Journal)" },
+    { "url": "https://resources.bestfriends.org/node/850", "tipo": "guia de ONG (Best Friends Animal Society)" },
+    { "url": "https://www.chewy.com/2-hounds-design-freedom-no-pull/dp/136953", "tipo": "review de varejo (Chewy), lido via resumo de busca; a página devolveu 429 na leitura direta" },
+    { "url": "https://suggestqueries.google.com", "tipo": "autocomplete do Google EUA (dados/autocomplete-google.json)" },
+    { "url": "https://www.facebook.com/ads/library/", "tipo": "copy dos anúncios dos concorrentes (dados/mineracao-nicho.json), que mostra a linguagem que o mercado já valida" }
+  ],
+  "limite": "Reddit não abre direto desta máquina (só um espelho de thread respondeu) e a Chewy devolveu 429. A base é: 1 thread do r/dogs, guias de ajuste, o autocomplete do Google e a copy dos anúncios que estão rodando. Amostra pequena: serve para linguagem e objeção, não para medir frequência.",
+  "dores": [
+    "o cão puxa e o dono sai do passeio com o ombro doendo (anúncios VivaPaws e Dogshood: \"If your shoulder hurts after every walk\")",
+    "o cão engasga e tosse na coleira (anúncios Dog Friendly Co, FourPaw, PawlyLab: \"collars put dangerous pressure on a dog's neck\")",
+    "peitoral que gira, escorrega ou precisa de reajuste o tempo todo (r/dogs: \"end up twisting or needing constant readjustment\")",
+    "o cão escapa do peitoral (autocomplete: 'escape proof dog harness for small dogs', '... for dachshund', '... for chihuahua')",
+    "peitoral que machuca atrás da pata dianteira (anúncio Dogshood: \"the strap sitting on the shoulder joint, pinching every time they pull\")"
+  ],
+  "desejos": [
+    "parar de puxar sem precisar de adestrador (\"Works without training\", VivaPaws)",
+    "colocar em 2 segundos (\"2-second easy on\", Dog Friendly Co)",
+    "peitoral feito para o corpo da raça (\"Standard harnesses were built for average dogs\", Little Dog Co)",
+    "nome do cão no peitoral (autocomplete: 'dog harness custom name', 'personalized dog harness with name'; 243 anúncios ativos em 'dog harness with name')"
+  ],
+  "objecoes": [
+    "tamanho: 'how to measure a small dog for a harness', 'dog harness small neck large chest' (autocomplete) e reviews de quem comprou o tamanho errado e o peitoral ficou escorregando",
+    "front clip é ruim para o cão? ('are front clip harnesses bad for dogs', 'front clip dog harness good or bad')",
+    "vai continuar puxando ('front clip dog harness for pulling reddit', 'still pulls')",
+    "durabilidade e argola que quebra (herdado da voz francesa, mesma categoria de produto)"
+  ],
+  "linguagem_literal": [
+    "a lot of no-pull harnesses just don't fit well and end up twisting or needing constant readjustment. (r/dogs)",
+    "it's going to feel weird for the dog no matter the brand. (r/dogs)",
+    "I have the Easywalk for my lab mix who has a deep chest. (r/dogs)",
+    "if you can't get the harness to fit quite right, try putting it on upside down. (Whole Dog Journal)"
+  ],
+  "comparacao_franca": "Mesma dor (puxar, ombro, engasgo) e mesma objeção nº 1 (tamanho). Nos EUA aparece com força o recorte por raça (Little Dog Co escala com 'Built for Corgis/Frenchies/Dachshunds') e o nome no peitoral; na França o argumento era 'sans dressage' e conforto.",
+  "leitura": "O cliente americano quer parar de brigar com o cão no passeio, sem adestrador e sem machucar. O que trava a compra é o medo de errar o tamanho e o peitoral girar. Brecha para iniciante: peitoral de argola no peito com guia de medidas por raça e a promessa 'tamanho errado? mandamos o certo de graça, fique com o primeiro'."
+}

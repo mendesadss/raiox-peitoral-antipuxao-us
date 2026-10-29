@@ -1,0 +1,259 @@
+{
+  "generated_at": "2026-10-29T18:50:40.863Z",
+  "rule": "Carrossel completo da PDP do concorrente campeao por produto, lido do catalogo salvo via navegador (products.json) porque o Shopify devolve 429 para fetch/curl nesta maquina. Teto 12; acima disso a amostra e espacada (primeiro e ultimo inclusos).",
+  "products": [
+    {
+      "product_handle": "steadytail-no-pull-harness",
+      "competitor": "VivaPaws",
+      "competitor_product_title": "VivaPaws No-Pull Harness",
+      "competitor_page": "https://try-vivapaws.com/products/no-pull-harness",
+      "competitor_json": "catalogo salvo (products.json via navegador) de try-vivapaws.com",
+      "real_carousel_count": 14,
+      "downloaded_carousel_count": 12,
+      "amostrado": true,
+      "files": [
+        {
+          "position": 1,
+          "original_index_no_carrossel_real": 1,
+          "file": "carrossel-concorrente/referencia-01.gif",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/gif1carroussel-ezgif.com-optimize_48e6b4a1-130e-48c5-baf1-0f4169cb789a.gif?v=1792004494",
+          "alt": null,
+          "bytes": 1177581
+        },
+        {
+          "position": 2,
+          "original_index_no_carrossel_real": 2,
+          "file": "carrossel-concorrente/referencia-02.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/image-2026-10-15T020709.517.webp?v=1792004855",
+          "alt": null,
+          "bytes": 368832
+        },
+        {
+          "position": 3,
+          "original_index_no_carrossel_real": 3,
+          "file": "carrossel-concorrente/referencia-03.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/image-2026-09-08T185948.601_48b3eefe-334e-4196-bc67-a1373c867dfa.webp?v=1788889337",
+          "alt": null,
+          "bytes": 447289
+        },
+        {
+          "position": 4,
+          "original_index_no_carrossel_real": 5,
+          "file": "carrossel-concorrente/referencia-04.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/The-Calm-_-Easy-Walks-You-Always-Wanted_2_53a3c1a6-ffd3-4197-917a-c60b32b33a71.webp?v=1788889336",
+          "alt": null,
+          "bytes": 81213
+        },
+        {
+          "position": 5,
+          "original_index_no_carrossel_real": 6,
+          "file": "carrossel-concorrente/referencia-05.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/image-2026-09-08T192524.490_fc7fa566-1040-4e6d-a3c7-157e6c4954b5.webp?v=1788889337",
+          "alt": null,
+          "bytes": 300191
+        },
+        {
+          "position": 6,
+          "original_index_no_carrossel_real": 7,
+          "file": "carrossel-concorrente/referencia-06.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/7_3.webp?v=1788388898",
+          "alt": null,
+          "bytes": 115621
+        },
+        {
+          "position": 7,
+          "original_index_no_carrossel_real": 8,
+          "file": "carrossel-concorrente/referencia-07.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/2_5.webp?v=1788388898",
+          "alt": null,
+          "bytes": 122501
+        },
+        {
+          "position": 8,
+          "original_index_no_carrossel_real": 9,
+          "file": "carrossel-concorrente/referencia-08.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/1_f6ec6578-c02f-48ce-95cd-1d67ac9fbb0d.webp?v=1788388898",
+          "alt": null,
+          "bytes": 120539
+        },
+        {
+          "position": 9,
+          "original_index_no_carrossel_real": 10,
+          "file": "carrossel-concorrente/referencia-09.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/3_5.webp?v=1788388898",
+          "alt": null,
+          "bytes": 121321
+        },
+        {
+          "position": 10,
+          "original_index_no_carrossel_real": 12,
+          "file": "carrossel-concorrente/referencia-10.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/5_5.webp?v=1788388898",
+          "alt": null,
+          "bytes": 118966
+        },
+        {
+          "position": 11,
+          "original_index_no_carrossel_real": 13,
+          "file": "carrossel-concorrente/referencia-11.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/6_2.webp?v=1788388898",
+          "alt": null,
+          "bytes": 119199
+        },
+        {
+          "position": 12,
+          "original_index_no_carrossel_real": 14,
+          "file": "carrossel-concorrente/referencia-12.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/1068/7479/8417/files/8_2.webp?v=1788388899",
+          "alt": null,
+          "bytes": 122258
+        }
+      ]
+    },
+    {
+      "product_handle": "steadytail-name-patch",
+      "competitor": "Dogshood",
+      "competitor_product_title": "Extra Nickname Patch",
+      "competitor_page": "https://dogshood.com/products/extra-patches",
+      "competitor_json": "catalogo salvo (products.json via navegador) de dogshood.com",
+      "real_carousel_count": 3,
+      "downloaded_carousel_count": 3,
+      "amostrado": false,
+      "files": [
+        {
+          "position": 1,
+          "original_index_no_carrossel_real": 1,
+          "file": "carrossel-concorrente/referencia-01.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0929/9702/6136/files/dog-harness-name-patch-dogshood-main_jpg.webp?v=1781554051",
+          "alt": null,
+          "bytes": 115891
+        },
+        {
+          "position": 2,
+          "original_index_no_carrossel_real": 2,
+          "file": "carrossel-concorrente/referencia-02.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0929/9702/6136/files/dog-harness-name-patch-dogshood-on-harness_jpg.webp?v=1781554052",
+          "alt": null,
+          "bytes": 175066
+        },
+        {
+          "position": 3,
+          "original_index_no_carrossel_real": 3,
+          "file": "carrossel-concorrente/referencia-03.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0929/9702/6136/files/dog-harness-name-patch-dogshood-velcro-back_jpg.webp?v=1781554053",
+          "alt": null,
+          "bytes": 1174612
+        }
+      ],
+      "nota": "29/10/2026: a primeira escolha (item-customizations-copy) tinha só um ícone de rolo de pintura, não o patch; trocado pelo Extra Nickname Patch da mesma loja"
+    },
+    {
+      "product_handle": "steadytail-bungee-leash",
+      "competitor": "FourPaw",
+      "competitor_product_title": "SafeWalk® Shock-Absorbing Bungee Leash",
+      "competitor_page": "https://fourpawco.com/products/bungee-leash",
+      "competitor_json": "catalogo salvo (products.json via navegador) de fourpawco.com",
+      "real_carousel_count": 12,
+      "downloaded_carousel_count": 12,
+      "amostrado": false,
+      "files": [
+        {
+          "position": 1,
+          "original_index_no_carrossel_real": 1,
+          "file": "carrossel-concorrente/referencia-01.png",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/fourpaw-bungee-product-gallery-hero-v1.png?v=1787313546",
+          "alt": null,
+          "bytes": 1736387
+        },
+        {
+          "position": 2,
+          "original_index_no_carrossel_real": 2,
+          "file": "carrossel-concorrente/referencia-02.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/bungee-leash-01-01-shahor-black-f130bb02-4369-4de6-bb85-0f2e24429dab-webp-2026-07-26.webp?v=1785079551",
+          "alt": null,
+          "bytes": 57127
+        },
+        {
+          "position": 3,
+          "original_index_no_carrossel_real": 3,
+          "file": "carrossel-concorrente/referencia-03.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/bungee-leash-02-02-beige-c4dcdd8a-5208-49a8-986a-a0188231c81a-webp-2026-07-26.webp?v=1785079551",
+          "alt": null,
+          "bytes": 55350
+        },
+        {
+          "position": 4,
+          "original_index_no_carrossel_real": 4,
+          "file": "carrossel-concorrente/referencia-04.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/bungee-leash-03-03-adom-red-086b8e1c-e990-4061-868b-d34a117c91be-webp-2026-07-26.webp?v=1785079551",
+          "alt": null,
+          "bytes": 72997
+        },
+        {
+          "position": 5,
+          "original_index_no_carrossel_real": 5,
+          "file": "carrossel-concorrente/referencia-05.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/bungee-leash-04-04-techelet-sky-blue-62b261da-8d2f-4a8d-8507-7eeb24adf945-webp-2026-07-26.webp?v=1785079551",
+          "alt": null,
+          "bytes": 72560
+        },
+        {
+          "position": 6,
+          "original_index_no_carrossel_real": 6,
+          "file": "carrossel-concorrente/referencia-06.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/bungee-leash-05-05-varod-rose-red-93a5f011-d875-4353-901d-aebba40bf8bb-webp-2026-07-26.webp?v=1785079551",
+          "alt": null,
+          "bytes": 69878
+        },
+        {
+          "position": 7,
+          "original_index_no_carrossel_real": 7,
+          "file": "carrossel-concorrente/referencia-07.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/bungee-leash-06-06-katom-orange-83851a05-8f40-43f0-b3a6-ba6c6ea61e5d-webp-2026-07-26.webp?v=1785079551",
+          "alt": null,
+          "bytes": 72941
+        },
+        {
+          "position": 8,
+          "original_index_no_carrossel_real": 8,
+          "file": "carrossel-concorrente/referencia-08.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/bungee-leash-07-07-aqua-turquoise-ff766a0a-35fd-43e1-b7c1-a2df8c642db1-webp-2026-07-26.webp?v=1785079551",
+          "alt": null,
+          "bytes": 58348
+        },
+        {
+          "position": 9,
+          "original_index_no_carrossel_real": 9,
+          "file": "carrossel-concorrente/referencia-09.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/bungee-leash-08-08-afor-gray-f60275bd-9d4e-4e3b-9a29-76def8490130-webp-2026-07-26.webp?v=1785079551",
+          "alt": null,
+          "bytes": 49553
+        },
+        {
+          "position": 10,
+          "original_index_no_carrossel_real": 10,
+          "file": "carrossel-concorrente/referencia-10.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/bungee-leash-09-06-color-options-webp-2026-07-26.webp?v=1792743506",
+          "alt": null,
+          "bytes": 408983
+        },
+        {
+          "position": 11,
+          "original_index_no_carrossel_real": 11,
+          "file": "carrossel-concorrente/referencia-11.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/bungee-leash-10-whatsappimage2026-04-23at16-38-10-webp-2026-07-26.webp?v=1785079551",
+          "alt": null,
+          "bytes": 151537
+        },
+        {
+          "position": 12,
+          "original_index_no_carrossel_real": 12,
+          "file": "carrossel-concorrente/referencia-12.webp",
+          "source_image_url": "https://cdn.shopify.com/s/files/1/0996/9706/6353/files/bungeeleashfeatures-en-v2.webp?v=1785092986",
+          "alt": null,
+          "bytes": 203593
+        }
+      ]
+    }
+  ]
+}

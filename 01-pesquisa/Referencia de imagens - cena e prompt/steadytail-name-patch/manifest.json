@@ -1,0 +1,37 @@
+{
+  "product_handle": "steadytail-name-patch",
+  "competitor": "Dogshood",
+  "competitor_product_title": "Extra Nickname Patch",
+  "competitor_page": "https://dogshood.com/products/extra-patches",
+  "competitor_json": "catalogo salvo (products.json via navegador) de dogshood.com",
+  "real_carousel_count": 3,
+  "downloaded_carousel_count": 3,
+  "amostrado": false,
+  "files": [
+    {
+      "position": 1,
+      "original_index_no_carrossel_real": 1,
+      "file": "carrossel-concorrente/referencia-01.webp",
+      "source_image_url": "https://cdn.shopify.com/s/files/1/0929/9702/6136/files/dog-harness-name-patch-dogshood-main_jpg.webp?v=1781554051",
+      "alt": null,
+      "bytes": 115891
+    },
+    {
+      "position": 2,
+      "original_index_no_carrossel_real": 2,
+      "file": "carrossel-concorrente/referencia-02.webp",
+      "source_image_url": "https://cdn.shopify.com/s/files/1/0929/9702/6136/files/dog-harness-name-patch-dogshood-on-harness_jpg.webp?v=1781554052",
+      "alt": null,
+      "bytes": 175066
+    },
+    {
+      "position": 3,
+      "original_index_no_carrossel_real": 3,
+      "file": "carrossel-concorrente/referencia-03.webp",
+      "source_image_url": "https://cdn.shopify.com/s/files/1/0929/9702/6136/files/dog-harness-name-patch-dogshood-velcro-back_jpg.webp?v=1781554053",
+      "alt": null,
+      "bytes": 1174612
+    }
+  ],
+  "nota": "29/10/2026: a primeira escolha (item-customizations-copy) tinha só um ícone de rolo de pintura, não o patch; trocado pelo Extra Nickname Patch da mesma loja"
+}

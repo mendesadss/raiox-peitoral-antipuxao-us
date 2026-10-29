@@ -1,0 +1,824 @@
+{
+  "_leia": "Consolidado da pesquisa (fatos coletados em 29/10/2026 + decisões do analista). Fonte única para o gerador (dados.mjs/extra.mjs). Todo número aqui tem origem em um arquivo desta pasta.",
+  "caso": {
+    "code": "RX-2026-1029-PEITORAL",
+    "nome": "Peitoral antipuxão para cachorro",
+    "nicho_en": "no pull dog harness",
+    "tipo": "Direcionado",
+    "nivel": "Iniciante",
+    "pais": "US",
+    "moeda": "USD",
+    "idioma": "en",
+    "coleta": "29/10/2026",
+    "pedido": "Mentorado iniciante, pouco caixa. Escolher o nicho de menor risco entre 3 raio-x (massageador de pescoço EUA, relógio masculino EUA, peitoral França). Peitoral venceu; este raio-x confirma (ou não) os EUA contra a França.",
+    "restricoes_mendes": [
+      "Envio da China direto ao cliente. Sem IVA, imposto, IOSS ou armazém local nas contas do P&L; frete China.",
+      "Troca de tamanho é o risco principal: guia de medidas forte e reenvio do tamanho certo sem pedir devolução."
+    ],
+    "decisao": "GO CONDICIONAL",
+    "marca": "Steadytail"
+  },
+  "fase0_matriz": {
+    "arquivo": "mcp-contagens.json + matriz-paises.json (API oficial ads_archive, teto 2000 por célula; INACTIVE bateu o teto em quase todas, então o total é piso e o vivos% fica indeterminado)",
+    "ativos": {
+      "dog harness": {
+        "US": 929,
+        "CA": 704,
+        "GB": "≥2000",
+        "AU": 635,
+        "DE": 504,
+        "FR": 545,
+        "NL": 495,
+        "ES": 491
+      },
+      "no pull dog harness": {
+        "US": 286,
+        "CA": 229,
+        "GB": 952,
+        "AU": 137,
+        "DE": 233,
+        "FR": 252,
+        "NL": 240,
+        "ES": 243
+      },
+      "front clip dog harness": {
+        "US": 196,
+        "CA": 179,
+        "GB": 665,
+        "AU": 95,
+        "DE": 81,
+        "FR": 85,
+        "NL": 83,
+        "ES": 84
+      }
+    },
+    "inativos": "≥2000 (piso) em todas as células, exceto front clip: DE 1570, FR 1547, NL 1365, ES 1322",
+    "termos_locais_ativos": {
+      "FR harnais chien": 1190,
+      "FR harnais anti traction": 662,
+      "DE hundegeschirr": 109,
+      "DE anti zug geschirr": 195,
+      "NL hondentuig": 45,
+      "ES arnés perro": 335,
+      "ES arnes antitirones": 74,
+      "GB no pull dog harness": 952,
+      "AU dog harness": 635
+    },
+    "arquivo_locais": "contagens-extra.json",
+    "alvos_assimetria": [
+      "AU front clip 0,15",
+      "FR front clip 0,16",
+      "US front clip 0,21",
+      "AU no pull 0,22",
+      "CA front clip 0,25"
+    ],
+    "leitura": "Nenhum cemitério medível (vivos% indeterminado porque o histórico bateu o teto). Reino Unido é o mais disputado (≥2.000 ativos no termo amplo, 952 no antipuxão). EUA: 929 no amplo e 286 no antipuxão. França no idioma local: 1.190 em 'harnais chien' e 662 em 'harnais anti traction', ou seja, mais anúncios por termo do que os EUA no ângulo antipuxão (662 x 286), num mercado de busca menor.",
+    "g1": "passa: EUA com 929 ativos no termo amplo (> 300)"
+  },
+  "banco_oportunidade": {
+    "fonte": "Banco de Oportunidade, dados de 29/10/2026 (keywords.json no Drive) e tabela lojas no Supabase",
+    "dog_harness_us": "66 mil buscas/mês de média, nunca abaixo de 60,5 mil, +14% nos últimos meses, CPC US$ 2,34",
+    "anuncios_por_mil_buscas": "929 / 66 = 14 anúncios ativos por mil buscas (relógio: 36)",
+    "lojas_banco": "joyrideharness.com 26 mil visitas (-16%), voyagerharness.com 12 mil (-2%); sparkpaws.com 312 mil (marca)"
+  },
+  "demanda": {
+    "arquivos": "demanda-contagens.json (API, EUA, ativos) + autocomplete-google.json (8 sementes x 10 modificadores)",
+    "aviso": "A API oficial não expõe parte dos anúncios só-EUA (Little Dog Co aparece com 0 ativos na API e 500+ na Biblioteca pública). As contagens por termo são PISO.",
+    "termos": [
+      {
+        "t": "dog harness",
+        "n": 937,
+        "int": "comprar",
+        "prod": "Peitoral (herói)",
+        "sazon": "ano todo, pico em presente de fim de ano"
+      },
+      {
+        "t": "dog pulling on leash",
+        "n": 530,
+        "int": "problema",
+        "prod": "Peitoral (herói), ângulo de dor",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "how to stop dog from pulling on leash",
+        "n": 365,
+        "int": "problema",
+        "prod": "Peitoral + guia de passeio",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "no pull dog harness",
+        "n": 288,
+        "int": "comprar",
+        "prod": "Peitoral (herói)",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "dog harness small dog",
+        "n": 252,
+        "int": "comprar",
+        "prod": "Peitoral, tamanhos XS a M",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "dog harness with name",
+        "n": 243,
+        "int": "comprar",
+        "prod": "Patch com nome (bump)",
+        "sazon": "presente (nov-dez)"
+      },
+      {
+        "t": "dog harness for dogs that pull",
+        "n": 224,
+        "int": "problema",
+        "prod": "Peitoral (herói)",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "front clip dog harness",
+        "n": 196,
+        "int": "pesquisar",
+        "prod": "Peitoral (herói), explicar a argola no peito",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "step in dog harness",
+        "n": 135,
+        "int": "comprar",
+        "prod": "fora do plano (outro modelo)",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "reflective dog harness",
+        "n": 87,
+        "int": "comprar",
+        "prod": "atributo do herói (faixa refletiva)",
+        "sazon": "inverno (escurece cedo)"
+      },
+      {
+        "t": "led dog harness",
+        "n": 86,
+        "int": "comprar",
+        "prod": "fora do plano (eletrônico)",
+        "sazon": "outono e inverno"
+      },
+      {
+        "t": "dog harness and leash set",
+        "n": 85,
+        "int": "comprar",
+        "prod": "guia elástica (add-on de carrinho)",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "dog harness with handle",
+        "n": 69,
+        "int": "comprar",
+        "prod": "atributo do herói (alça de controle)",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "no pull dog harness for small dogs",
+        "n": 51,
+        "int": "comprar",
+        "prod": "Peitoral, tamanhos pequenos",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "custom dog harness",
+        "n": 37,
+        "int": "comprar",
+        "prod": "Patch com nome (bump)",
+        "sazon": "presente"
+      },
+      {
+        "t": "personalized dog harness",
+        "n": 30,
+        "int": "comprar",
+        "prod": "Patch com nome (bump)",
+        "sazon": "presente"
+      },
+      {
+        "t": "tactical dog harness",
+        "n": 15,
+        "int": "comprar",
+        "prod": "fora do plano (cão grande, nicho de marca)",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "no pull dog harness for large dogs",
+        "n": 9,
+        "int": "comprar",
+        "prod": "Peitoral, tamanhos L e XL",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "escape proof dog harness",
+        "n": 5,
+        "int": "problema",
+        "prod": "argumento de ajuste (2 fivelas no peito)",
+        "sazon": "ano todo"
+      },
+      {
+        "t": "french bulldog harness",
+        "n": 2,
+        "int": "comprar",
+        "prod": "ângulo por raça nos anúncios",
+        "sazon": "ano todo"
+      }
+    ],
+    "sem_contagem": [
+      {
+        "t": "how to measure a small dog for a harness",
+        "motivo": "autocomplete; contagem não levantada nesta rodada, prova da dor de tamanho"
+      },
+      {
+        "t": "dog harness small neck large chest",
+        "motivo": "autocomplete; contagem não levantada nesta rodada, prova da dor de tamanho"
+      },
+      {
+        "t": "are front clip harnesses bad for dogs",
+        "motivo": "autocomplete (4 aparições); objeção, contagem não levantada"
+      },
+      {
+        "t": "front clip dog harness vs back clip",
+        "motivo": "autocomplete; contagem não levantada"
+      },
+      {
+        "t": "escape proof dog harness for dachshund",
+        "motivo": "autocomplete; contagem não levantada"
+      },
+      {
+        "t": "dog harness custom name",
+        "motivo": "autocomplete (3 aparições); contagem não levantada"
+      }
+    ]
+  },
+  "voz_do_mercado": "ver voz-do-mercado.json",
+  "benchmark_custo": {
+    "fonte": "pesquisa web 29/10/2026 (Triple Whale 2025 via topgrowthmarketing/influee; Dynamic Yield via fungies; webtonic). Nenhuma fonte primária específica de pet supplies dropship.",
+    "cpm_meta_us": "US$ 14,19 média geral 2025 (Triple Whale, 35 mil contas); objetivo Vendas até US$ 24,50; Q4 é o pico",
+    "cpc": "US$ 0,61 a 0,96 (veterinário/pet care, proxy fraco); média geral US$ 1,72",
+    "cpa": "US$ 38,19 média geral 2025 (Triple Whale); pet care US$ 15,29 (proxy fraco)",
+    "conversao_pet": "1,8% a 3,0% (tráfego Meta, pet products 2026); Shopify pet mediana 2,3%",
+    "aov_pet": "US$ 68 a 85",
+    "leitura": "CPA de equilíbrio do plano (US$ 26) fica abaixo da média geral (US$ 38) e acima da referência pet (US$ 15). Só fecha com criativo acima da média, o que os concorrentes provam ser possível (PawlyLab, Dogshood)."
+  },
+  "lojas": [
+    {
+      "slug": "dogshood",
+      "nome": "Dogshood (e Tailo)",
+      "dominio": "dogshood.com",
+      "dominio_irmao": "tailoharness.com",
+      "modelo": "Dropship de marca",
+      "veredito": "MODELAR",
+      "nivel": "Avançado",
+      "resumo": "A maior operação dropship do nicho nos EUA: 425 mil visitas/mês, peitoral antipuxão 'com ajuste personalizado' a US$ 39,99. A mesma página (Tailo Dogwear) roda a loja irmã tailoharness.com. Muito Google Ads (200 anúncios). É o teto de referência, não o ponto de partida do iniciante.",
+      "heroi": {
+        "nome": "Dogshood™ No Pull Harness",
+        "preco": "US$ 39,99",
+        "de": "US$ 79,99",
+        "handle": "personalized-anti-pull-harness",
+        "variantes": "66 (8 cores x XS a XXL)",
+        "imagens": 17
+      },
+      "idade": "catálogo desde 06/08/2025 (~14 meses); tailoharness.com desde 09/09/2026",
+      "plataforma": "Shopify · tema próprio (repositório GitHub 'Validare') · Klaviyo, Loox, TikTok, GTM, Intelligems",
+      "catalogo": "23 produtos: o peitoral (3 versões: No Pull, Slip-On, Ergonomic), sets de passeio US$ 61,99 a 86,99, coleira tática, porta-saquinho, patch com nome US$ 10, argola frontal US$ 8. Mediana US$ 21,99.",
+      "midia": {
+        "paginas": "Dogshood 128514970341968 + Tailo Dogwear 1283880841480589 + Happy Dog Walks 1308603385675580",
+        "ativos": 582,
+        "historico": 609,
+        "metodo": "maior valor por página entre API oficial e Biblioteca pública (Dogshood 74/101 raspagem, API 0/27; Tailo Dogwear 492/492 raspagem, API 0/0; Happy Dog Walks 16/16 raspagem). A página Tailo Dogwear anuncia as duas lojas (dogshood.com e tailoharness.com).",
+        "nota": "histórico quase igual aos ativos: a operação renovou os anúncios recentemente (os da amostra têm 15 dias)"
+      },
+      "amostra": {
+        "anuncios_nicho": 22,
+        "formatos": "dogshood 4 vídeos + 10 imagens; tailo 8",
+        "unicos": 7,
+        "longevo_dias": 15,
+        "nota": "Os anúncios atuais da Dogshood têm só 15 dias: a operação renovou os criativos; não dá para medir longevidade"
+      },
+      "google": "anuncia no Google: 200 anúncios (Dogshood) + 3 (Tailo)",
+      "trafego": {
+        "visitas": "425K",
+        "rank_global": "112.620",
+        "rank_pais": "24.502",
+        "bounce": "40,7%",
+        "paginas_visita": "2,98",
+        "duracao": "2:22",
+        "paises": "EUA 88,5%, Canadá 7,1%",
+        "snapshot": "SimilarWeb 10/2026",
+        "tranco": "433.310, subindo",
+        "irmao": "tailoharness.com: SimilarWeb sem dados (1 tentativa); Tranco 3.026.733, subindo"
+      },
+      "oferta": {
+        "frete": "não informado na home e na PDP",
+        "garantia": "90 dias de devolução do dinheiro",
+        "bnpl": "Klarna, Zip",
+        "tamanho": "Size Guide na PDP",
+        "reviews": "contagem não exposta (Loox)"
+      },
+      "social": "nenhum perfil linkado",
+      "anatomia": {
+        "big_idea": "Sua guia prende nas costas, o único ponto que faz o cão puxar mais. A argola no peito vira o cão de volta para você.",
+        "mecanismo": "reflexo de oposição: 'Push on a dog's chest and they drive into it'; argola alta no peito redireciona.",
+        "gancho": "'The No-Pull Harness That Turns Your Dog Around', 'The harness is hurting them.', 'Not All No-Pull Harnesses Are Built the Same' (comparação com cópia da Amazon)",
+        "estrutura": "imagem ou vídeo + texto longo em segunda pessoa, leva a advertorial ('easy-on', 'founder letter')",
+        "objecao": "'já tentei de tudo' (coleira, peitoral, enforcador, cabresto) e 'peitoral machuca'"
+      },
+      "copiar": "O argumento do reflexo de oposição explicado em linguagem simples, a comparação lado a lado com a cópia barata e a garantia de 90 dias.",
+      "evitar": "Operar 2 domínios, advertorial de 'carta do fundador' e Google Ads pesado: é operação de quem já tem caixa.",
+      "defens": "Média. Tráfego alto e bounce baixo (40,7%) sugerem marca lembrada, mas sem perfil social e com 2 lojas espelho.",
+      "faturamento": {
+        "metodo": "visitas x conversão 1,5% a 2,5% x ticket US$ 45",
+        "central": 382000,
+        "piso": 287000,
+        "teto": 478000
+      }
+    },
+    {
+      "slug": "pawlylab",
+      "nome": "PawlyLab",
+      "dominio": "betterdoglife.com",
+      "modelo": "Dropship puro",
+      "veredito": "MODELAR",
+      "nivel": "Médio",
+      "resumo": "Peitoral antipuxão 'grátis, só paga o frete' com upsell para o modelo premium. 117,5 mil visitas/mês e o anúncio 'FREE TODAY' no ar há 175 dias: o funil grátis + frete funciona neste nicho.",
+      "heroi": {
+        "nome": "No-Pull Harness [Free Today]",
+        "preco": "US$ 0 + frete (versão paga US$ 39,95; quiz US$ 89,95)",
+        "de": "US$ 99,95",
+        "handle": "no-pull-harness",
+        "variantes": "60 (8 cores x XXS a XL)",
+        "imagens": 11
+      },
+      "idade": "catálogo desde 03/10/2025 (~13 meses)",
+      "plataforma": "Shopify · tema 'easyWalk' · Klaviyo, Loox, Rebuy, GTM, Clarity",
+      "catalogo": "45 produtos, quase todos variações do mesmo peitoral (uma página por cor), upgrade 'Premium Harness (Less Rubbing)' US$ 27,95 a 49,95, versão quiz US$ 89,95. Mediana US$ 39,95.",
+      "midia": {
+        "paginas": "PawlyLab Co. 826756917182160 + Pawly Lab Co. 1050703328115345 + Pawly Labs Co 1307878399085886",
+        "ativos": 126,
+        "historico": 694,
+        "metodo": "maior valor por página entre API oficial e Biblioteca pública (826756917182160: 105 ativos raspagem, 583 histórico API; 1050703328115345: 21 API / 80 API; 1307878399085886: 0 / 31 API)"
+      },
+      "amostra": {
+        "anuncios_nicho": 16,
+        "formatos": "14 imagens, 2 DCO",
+        "unicos": 3,
+        "longevo_dias": 175,
+        "nota": "3 textos em 16 anúncios: repete o vencedor em vez de testar ângulo"
+      },
+      "google": "anuncia no Google: 4 anúncios",
+      "trafego": {
+        "visitas": "117,5K",
+        "rank_global": "337.588 (era 368.562 há 3 meses)",
+        "rank_pais": "73.652",
+        "bounce": "64,8%",
+        "paginas_visita": "2,53",
+        "duracao": "1:40",
+        "paises": "EUA 91,8%",
+        "snapshot": "SimilarWeb 10/2026",
+        "tranco": "1.051.220, subindo"
+      },
+      "oferta": {
+        "frete": "cobrado no peitoral grátis (valor não exposto na página)",
+        "garantia": "90 dias, 'Love It or Money-Back'",
+        "bnpl": "Zip",
+        "tamanho": "'TAP TO SEE SIZE GUIDE'",
+        "reviews": "2.308 (Loox) numa loja de 13 meses"
+      },
+      "social": "nenhum perfil linkado",
+      "anatomia": {
+        "big_idea": "Estamos liberando estoque para os modelos 2026: o peitoral mais vendido sai de graça, você só paga o frete.",
+        "mecanismo": "argola no peito ('Front-clip design - no pain or choking'), funciona em qualquer raça.",
+        "gancho": "'⭐️ FREE TODAY', '⭐️ FREE LEASH TODAY', '✅ Stops pulling instantly'",
+        "estrutura": "imagem estática com checklist de 4 benefícios e o selo de grátis; leva direto à PDP",
+        "objecao": "preço (zero) e risco (90 dias)"
+      },
+      "copiar": "A lista de 4 benefícios com check, a oferta de brinde (guia grátis) e o upgrade no carrinho.",
+      "evitar": "'Grátis + frete' exige frete alto escondido e cobre o produto com o frete: é arriscado para iniciante (reclamação, chargeback) e a margem depende do upsell.",
+      "defens": "Baixa. Uma página por cor, 3 textos de anúncio, sem rede social: arbitragem de mídia.",
+      "faturamento": {
+        "metodo": "visitas x conversão 1,5% a 2,5% x ticket US$ 40 (frete + upgrade)",
+        "central": 94000,
+        "piso": 70500,
+        "teto": 117500
+      }
+    },
+    {
+      "slug": "littledogco",
+      "nome": "Little Dog Co.",
+      "dominio": "littledogco.store",
+      "modelo": "Dropship de marca",
+      "veredito": "MODELAR",
+      "nivel": "Médio",
+      "resumo": "Peitoral 'feito para a sua raça' (Corgi, Frenchie, Dachshund), US$ 39. Loja de 3 meses que já roda 500+ anúncios ativos e 864 variações. É o molde de ângulo mais forte do nicho para quem está entrando agora: o mesmo peitoral, uma página e um anúncio por raça.",
+      "heroi": {
+        "nome": "Corgi Harness",
+        "preco": "US$ 39,00",
+        "de": "US$ 119,99",
+        "handle": "corgi-harness",
+        "variantes": "44 (8 cores x XS a L)",
+        "imagens": 58
+      },
+      "idade": "catálogo desde 22/07/2026 (~3 meses); 1º anúncio ativo há 95 dias",
+      "plataforma": "Shopify · tema Shrine Pro ('Little Dog Co. V6') · Klaviyo, Judge.me, GTM",
+      "catalogo": "13 produtos: o mesmo peitoral em 4 páginas (Little Dog Co., Corgi, Frenchie, Doxie), Complete Walk Set US$ 85, coleira US$ 19,99, porta-saquinho US$ 11,99, 'Lifetime Warranty' US$ 5 e 2 produtos 'Exchange' (US$ 10 e 15) para troca. Mediana US$ 19,99.",
+      "midia": {
+        "paginas": "Little Dog Co. 1205491262650471",
+        "ativos": 500,
+        "historico": 500,
+        "piso": true,
+        "metodo": "Biblioteca pública, raspagem por page_id: bateu o teto de 500 nas duas chamadas (ativos e histórico). A API oficial devolve 0 ativos e 377 no histórico: não expõe esses anúncios só-EUA."
+      },
+      "amostra": {
+        "anuncios_nicho": 603,
+        "variacoes": 1484,
+        "formatos": "406 imagens, 178 vídeos, 18 DCO",
+        "unicos": 20,
+        "longevo_dias": 95,
+        "nota": "na página: 500 anúncios, 864 variações, mais antigo ainda ativo com 95 dias"
+      },
+      "google": "anuncia no Google: 49 anúncios",
+      "trafego": {
+        "visitas": "abaixo de 20 mil (faixa \"<20K\" do SimilarWeb: é teto, não medida exata)",
+        "rank_global": "2.820.136",
+        "rank_pais": "785.842",
+        "bounce": "61%",
+        "paginas_visita": "2,64",
+        "duracao": "0:13",
+        "paises": "EUA 100%",
+        "snapshot": "SimilarWeb 10/2026",
+        "tranco": "4.656.228, caindo",
+        "nota": "o SimilarWeb devolve \"<20K\" para domínio pequeno (graphVisitsGrade, ver referencias/payload-similarweb.md); o número exato não foi aberto"
+      },
+      "oferta": {
+        "frete": "Free Shipping",
+        "garantia": "30 dias (devolução de item sem uso); vende 'Lifetime Warranty' por US$ 5",
+        "bnpl": "não identificado",
+        "tamanho": "Size Guide; cobra a troca (produtos 'Exchange' de US$ 10 e 15)",
+        "reviews": "158 (Judge.me)"
+      },
+      "social": "nenhum perfil linkado",
+      "anatomia": {
+        "big_idea": "Peitorais comuns foram feitos para o cão médio. O seu não é médio.",
+        "mecanismo": "o mesmo peitoral apresentado como 'feito para' o corpo da raça (costas longas do dachshund, peito largo do frenchie, pernas curtas do corgi).",
+        "gancho": "'Built for dachshunds', 'Built for Corgis', 'Built for Frenchies': 'no riding up, no rubbing, no slipping loose'",
+        "estrutura": "imagem do cão da raça usando o peitoral + texto curto de 3 frases; 20 textos para 600 anúncios",
+        "objecao": "'peitoral não serve no meu cão' (tamanho e formato)"
+      },
+      "copiar": "O recorte por raça: uma página e um conjunto de anúncios por raça, todos com o mesmo produto. Responde direto à objeção de tamanho.",
+      "evitar": "Cobrar a troca de tamanho (US$ 10 a 15) e vender 'garantia vitalícia' de US$ 5: é exatamente a fricção que o mentorado vai tirar.",
+      "defens": "Baixa a média. Ângulo forte e copiável; tráfego abaixo de 20 mil visitas/mês (faixa do SimilarWeb) e visita média de 13 segundos, pequeno perto de 500+ anúncios: ou o anúncio leva a outra página/loja, ou está em teste pesado.",
+      "faturamento": {
+        "metodo": "TETO: até 20 mil visitas x conversão 1,5% a 2,5% x ticket; o real pode ser bem menor",
+        "central": null,
+        "piso": null,
+        "teto": 22500
+      }
+    },
+    {
+      "slug": "fourpaw",
+      "nome": "FourPaw",
+      "dominio": "fourpawco.com",
+      "modelo": "Dropship puro",
+      "veredito": "MODELAR",
+      "nivel": "Iniciante",
+      "resumo": "Loja de 6 produtos e um herói, o SafeWalk® No-Pull a US$ 49,90. É o molde mais próximo do que um iniciante consegue montar: um peitoral, uma guia elástica, um kit, 'tamanho errado? trocamos de graça'.",
+      "heroi": {
+        "nome": "SafeWalk® No-Pull Dog Harness",
+        "preco": "US$ 49,90",
+        "de": "US$ 89,99",
+        "handle": "safewalk-no-pull-2",
+        "variantes": "40 (8 cores x XS a XL)",
+        "imagens": 19
+      },
+      "idade": "catálogo desde 23/07/2026 (~3 meses)",
+      "plataforma": "Shopify · tema 'FourPaw CRO Dev' · Klaviyo, Loox, GTM, Kaching Bundles, Clarity",
+      "catalogo": "6 produtos: peitoral US$ 49,90, guia elástica US$ 39,99, coleira acolchoada US$ 29,99, guia de treino US$ 35,99, cinto de carro US$ 29,99, kit completo US$ 99,90. Mediana US$ 39,99.",
+      "midia": {
+        "paginas": "FourPaw 1280618591794238 + Dog Owner Magazine 1299437793258245",
+        "ativos": 124,
+        "historico": 240,
+        "metodo": "maior valor por página entre API oficial (0/99 e 0/1) e Biblioteca pública (124/239)"
+      },
+      "amostra": {
+        "anuncios_nicho": 12,
+        "formatos": "8 imagens, 4 DCO",
+        "unicos": 2,
+        "longevo_dias": 49
+      },
+      "google": "anuncia no Google: 5 anúncios",
+      "trafego": {
+        "visitas": "abaixo de 20 mil (faixa \"<20K\" do SimilarWeb: é teto, não medida exata)",
+        "rank_global": "4.794.770",
+        "bounce": "45,8%",
+        "snapshot": "SimilarWeb 10/2026",
+        "tranco": "sem ranking",
+        "nota": "o SimilarWeb devolve \"<20K\" para domínio pequeno (graphVisitsGrade, ver referencias/payload-similarweb.md); o número exato não foi aberto"
+      },
+      "oferta": {
+        "frete": "grátis; 5 a 10 dias úteis ('high volume of orders')",
+        "garantia": "60 dias, troca grátis ou dinheiro de volta: 'Wrong size? We'll exchange it free'",
+        "bnpl": "não identificado",
+        "tamanho": "tamanho por peso ('Five sizes cover dogs up to 132 lb'), peito só se ficar entre dois tamanhos",
+        "reviews": "contagem não exposta (Loox)"
+      },
+      "social": "facebook.com/FourPawIL, instagram.com/fourpaw_shop (página de Israel)",
+      "anatomia": {
+        "big_idea": "Seu cão não é 'mau'. A coleira é que está machucando.",
+        "mecanismo": "a força do puxão vai para o pescoço e a garganta na coleira; no peitoral de argola frontal ela vai para o peito.",
+        "gancho": "'SALE: 45% OFF + FREE GIFTS', 'Your dog is not “bad.” The collar is doing damage.'",
+        "estrutura": "imagem de produto + oferta (45% off + 3 brindes + frete grátis)",
+        "objecao": "culpa do dono ('meu cão é bagunceiro') e tamanho (troca grátis)"
+      },
+      "copiar": "A troca de tamanho grátis escrita na PDP, o tamanho pelo peso do cão (mais fácil que fita métrica) e o kit de passeio como degrau.",
+      "evitar": "Preço de US$ 49,90 no herói sem prova social visível: para loja nova, US$ 39,90 é o preço do mercado.",
+      "defens": "Baixa. Loja de 3 meses, 2 textos de anúncio.",
+      "faturamento": {
+        "metodo": "TETO: até 20 mil visitas x conversão 1,5% a 2,5% x ticket; o real pode ser bem menor",
+        "central": null,
+        "piso": null,
+        "teto": 25000
+      }
+    },
+    {
+      "slug": "vivapaws",
+      "nome": "VivaPaws",
+      "dominio": "try-vivapaws.com",
+      "modelo": "Dropship puro",
+      "veredito": "OBSERVAR",
+      "nivel": "Médio",
+      "resumo": "Peitoral antipuxão US$ 39,90 com a melhor copy de anúncio do nicho (reflexo de oposição, 'cães de trenó'), mas alega 13.817 avaliações numa loja de menos de 3 meses. Copiar o argumento, nunca a prova social.",
+      "heroi": {
+        "nome": "VivaPaws No-Pull Harness",
+        "preco": "US$ 39,90",
+        "de": "US$ 69,90",
+        "handle": "no-pull-harness",
+        "variantes": "40 (5 tamanhos x 8 cores)",
+        "imagens": 14
+      },
+      "idade": "catálogo desde 06/08/2026 (~12 semanas); domínio sem registro no Wayback",
+      "plataforma": "Shopify · tema Dawn · Klaviyo, Kaching Bundles, Clarity",
+      "catalogo": "25 produtos em inglês e espanhol (opera também na Espanha): peitoral, guias, argola frontal US$ 10, porta AirTag US$ 24,90, suplementos (taurina, petisco calmante). Mediana US$ 24,90.",
+      "midia": {
+        "paginas": "VivaPaws 1280598645143556 + Jessica Rivers 1077371572134414 + Dog Health Matters 1313284225191989",
+        "ativos": 57,
+        "historico": 217,
+        "metodo": "maior valor por página entre API (54/200, 3/4, 0/13) e Biblioteca pública (26/160)"
+      },
+      "amostra": {
+        "anuncios_nicho": 148,
+        "formatos": "105 vídeos, 24 imagens, 19 DCO",
+        "unicos": 24,
+        "longevo_dias": 57
+      },
+      "google": "não anuncia no Google (contador zero confirmado)",
+      "trafego": "não obtido: SimilarWeb devolveu sem dados em 2 rodadas (29/10/2026, 1 tentativa cada) e o Tranco não ranqueia o domínio",
+      "oferta": {
+        "frete": "Free Shipping, entrega rastreada",
+        "garantia": "90 dias; devolve o dinheiro e o cliente fica com o produto",
+        "bnpl": "Klarna, Affirm",
+        "tamanho": "'TAP TO SEE SIZE GUIDE'",
+        "reviews": "alega '13,817+ Reviews' (implausível para 12 semanas de loja; não usado em nenhuma conta)"
+      },
+      "social": "nenhum perfil linkado",
+      "anatomia": {
+        "big_idea": "Peitoral de argola nas costas prende a guia onde se prende cão de trenó. O seu foi feito para puxar.",
+        "mecanismo": "argola no peito: quando ele puxa, o próprio impulso o vira de lado.",
+        "gancho": "'If your shoulder hurts after every walk, it's not because you're too weak', '🎁 FREE No-Pull Harness', '60% OFF + FREE BUNGEE LEASH'",
+        "estrutura": "vídeo (71% dos anúncios) + texto longo explicando o mecanismo; oferta de brinde",
+        "objecao": "'já tentei adestrar', 'vai machucar', 'e se não funcionar' (90 dias e fica com o produto)"
+      },
+      "copiar": "O texto do mecanismo (opposition reflex, sled dog) e a garantia em que o cliente fica com o produto: casa com a regra do Mendes de não pedir devolução.",
+      "evitar": "Contador de avaliações inflado e personas de anúncio ('Jessica Rivers').",
+      "defens": "Baixa. 12 semanas de loja, sem rede social.",
+      "faturamento": "não estimado (sem tráfego)"
+    }
+  ],
+  "contexto_marcas": [
+    {
+      "nome": "Dog Friendly Co.",
+      "dominio": "dogfriendlyco.com",
+      "dado": "564,5 mil visitas/mês (SimilarWeb), 500+ anúncios ativos e 3.543 no histórico (API), 22.211 avaliações, Wayback desde 2020, 216 produtos, peitoral personalizado com patch de nome US$ 35,81 (de US$ 51,16), garantia 'perfect fit' de 60 dias, Afterpay/Affirm/Zip",
+      "por_que_fora": "MARCA consolidada (5 anos, 216 SKUs, avaliações verificadas em volume, Instagram próprio): não é molde de iniciante. Serve como prova de que peitoral + nome no patch vende em escala nos EUA."
+    },
+    {
+      "nome": "Joyride Harness",
+      "dominio": "joyrideharness.com",
+      "dado": "26,1 mil visitas/mês (SimilarWeb 10/2026, bate com o Banco), 124 produtos, desde 2018, peitoral US$ 59,95",
+      "por_que_fora": "marca com edições limitadas e estoque"
+    },
+    {
+      "nome": "Voyager (Best Pet Supplies)",
+      "dominio": "voyagerharness.com",
+      "dado": "12 mil visitas (Banco), 80 produtos desde 2019, US$ 17,99 a 22,99",
+      "por_que_fora": "marca de atacado, Amazon"
+    },
+    {
+      "nome": "Sparkpaws",
+      "dominio": "sparkpaws.com",
+      "dado": "312 mil visitas (Banco), 250+ produtos, AeroThin Harness US$ 34",
+      "por_que_fora": "marca de vestuário pet"
+    },
+    {
+      "nome": "Team K9, Sunny Tails, PawSafe, Beast & Buckle, 2 Hounds Design, Wilderdog",
+      "dominio": "teamk9.com, shopsunnytails.com, pawsafe.com, beastandbuckle.com, 2houndsdesign.com, wilderdog.com",
+      "dado": "anúncios de 300 a 829 dias no ar (2 Hounds Design Freedom Harness: 829 dias)",
+      "por_que_fora": "marcas com produto próprio ou patente; o anúncio de 829 dias mostra que o produto antipuxão é perene"
+    },
+    {
+      "nome": "Alpine Trail, Pawbibi, Myapin",
+      "dominio": "alpinetrailgear.com, pawbibi.com, myapin.com",
+      "dado": "8, 26 e 3 ativos (API); Pawbibi 1.115 no histórico",
+      "por_que_fora": "dropship com pouca mídia ativa hoje; reserva se alguma ficha cair"
+    }
+  ],
+  "comparacao_franca": {
+    "fonte_fr": "raio-x Europa do mesmo mentorado (Douxpas, 28/10/2026)",
+    "linhas": [
+      [
+        "Anúncios ativos no termo amplo",
+        "EUA 929 ('dog harness')",
+        "França 1.190 ('harnais chien')"
+      ],
+      [
+        "Anúncios ativos no ângulo antipuxão",
+        "EUA 286",
+        "França 662"
+      ],
+      [
+        "Busca mensal do termo amplo",
+        "EUA 66 mil (Banco)",
+        "França não medida no Banco"
+      ],
+      [
+        "Preço do herói no mercado",
+        "US$ 39 a 39,99 (4 de 5 lojas)",
+        "€ 44,90 o pack com guia"
+      ],
+      [
+        "Imposto no P&L",
+        "nenhum (regra do Mendes)",
+        "IVA 20% saía do preço no raio-x Europa"
+      ],
+      [
+        "Sobra por pedido antes do anúncio",
+        "US$ 26,00",
+        "€ 21,82 (com IVA e armazém UE)"
+      ],
+      [
+        "Verba mínima do teste",
+        "US$ 504",
+        "€ 499"
+      ],
+      [
+        "Maior concorrente dropship",
+        "Dogshood 425 mil visitas/mês",
+        "lojas francesas menores (ver raio-x Europa)"
+      ]
+    ],
+    "veredito": "Os EUA se confirmam melhores para este iniciante: mercado maior (66 mil buscas/mês só no termo amplo), menos anúncios no ângulo antipuxão do que a França (286 x 662), preço de mercado definido em US$ 39,90, sem IVA nem IOSS para resolver e língua em que o mentorado acha mais referência. O custo disso: CPM americano mais caro e concorrentes dropship muito maiores (Dogshood, PawlyLab), por isso a entrada é por um ângulo (raça + tamanho certo garantido), não pelo termo genérico."
+  },
+  "plano": {
+    "marca": "Steadytail",
+    "colisao": "buscado na web e nos catálogos coletados em 29/10/2026: nenhuma loja ou produto com esse nome. Próximo do nome mais parecido achado: 'HEELE' (marca de Amazon), distante.",
+    "ficha": {
+      "quem_e": "Steadytail, marca americana de passeio sem puxão para cães pequenos e médios.",
+      "o_que_vende": "Um peitoral antipuxão de argola no peito, com patch de nome e guia elástica como complemento.",
+      "pra_quem": "Dono de cão de 4 a 30 kg nos EUA, mulher 35-64 (SimilarWeb dos concorrentes: faixa 55-64 lidera), que sai do passeio com o ombro doendo e já errou tamanho de peitoral antes.",
+      "onde": "EUA, em inglês, em USD, pelo Meta (Facebook e Instagram); Google Search só depois de validar.",
+      "como_se_diferencia": "Tamanho certo garantido: guia de medidas por raça e, se não servir, mandamos o tamanho certo de graça e o cliente fica com o primeiro.",
+      "por_que": "Tamanho é a objeção nº 1 do nicho (autocomplete e reviews) e o concorrente que mais escala (Little Dog Co.) cobra US$ 10 a 15 pela troca."
+    },
+    "angulo": "Built for your breed + Right size, guaranteed. O mesmo peitoral anunciado por raça (Frenchie, Doodle, Dachshund, Beagle, Pit mix), com a promessa de tamanho certo.",
+    "produtos": [
+      {
+        "handle": "steadytail-no-pull-harness",
+        "titulo": "Steadytail No-Pull Harness",
+        "papel": "Herói (core)",
+        "tipo": "Dog Harness",
+        "colecao": "no-pull-walks",
+        "sku": "ST-01",
+        "preco": "39.90",
+        "de": "69.90",
+        "custo": 12,
+        "custo_nota": "US$ 6,50 produto + US$ 5,50 frete China porta a porta (estimativa sem cotação; pedir ao fornecedor envio DDP)",
+        "busca_aliexpress": "no pull dog harness front clip padded reflective",
+        "ref": {
+          "loja": "VivaPaws",
+          "dominio": "try-vivapaws.com",
+          "handle": "no-pull-harness"
+        }
+      },
+      {
+        "handle": "steadytail-name-patch",
+        "titulo": "Steadytail Custom Name Patches (pair)",
+        "papel": "Order bump",
+        "tipo": "Dog Harness Accessory",
+        "colecao": "walk-add-ons",
+        "sku": "ST-02",
+        "preco": "9.90",
+        "de": "14.90",
+        "custo": 2,
+        "custo_nota": "US$ 1,50 par de patches com velcro + US$ 0,50 de frete marginal no mesmo pacote",
+        "busca_aliexpress": "custom name patch velcro dog harness",
+        "ref": {
+          "loja": "Dogshood",
+          "dominio": "dogshood.com",
+          "handle": "ver catálogo dogshood.com (produto Custom Name Patches, US$ 10)"
+        }
+      },
+      {
+        "handle": "steadytail-bungee-leash",
+        "titulo": "Steadytail Shock-Absorbing Bungee Leash",
+        "papel": "Add-on de carrinho (fora da conta base)",
+        "tipo": "Dog Leash",
+        "colecao": "walk-add-ons",
+        "sku": "ST-03",
+        "preco": "19.90",
+        "de": "29.90",
+        "custo": 5,
+        "custo_nota": "US$ 3,50 + US$ 1,50 frete marginal",
+        "busca_aliexpress": "bungee dog leash shock absorbing reflective",
+        "ref": {
+          "loja": "FourPaw",
+          "dominio": "fourpawco.com",
+          "handle": "ver catálogo fourpawco.com (SafeWalk® Shock-Absorbing Bungee, US$ 39,99)"
+        }
+      }
+    ],
+    "economia": {
+      "premissas": "preço US$ 39,90; bump US$ 9,90 com 30% de aceite; taxa Shopify Payments 2,9% + US$ 0,30; reserva de reenvio de tamanho = 12% dos pedidos x US$ 12 = US$ 1,44 por pedido; reserva de reembolso 3% do valor; sem imposto, sem IVA, sem armazém (regra do Mendes)",
+      "aov": 42.87,
+      "custo": 12.6,
+      "taxa": 1.54,
+      "reenvio": 1.44,
+      "reembolso": 1.29,
+      "margem": 26,
+      "so_core": {
+        "receita": 39.9,
+        "custo": 12,
+        "taxa": 1.46,
+        "reenvio": 1.44,
+        "reembolso": 1.2,
+        "margem": 23.8
+      },
+      "pack2": {
+        "receita": 67.9,
+        "custo": 23,
+        "taxa": 2.27,
+        "reenvio": 1.44,
+        "reembolso": 2.04,
+        "margem": 39.15,
+        "nota": "2 peitorais (2º com ~30% off), para quem tem 2 cães; oferta de quantidade, não um 4º produto"
+      },
+      "cpa_equilibrio": 26,
+      "cpa_meta": 18,
+      "contribuicao_na_meta": 8,
+      "roas_equilibrio": 1.65,
+      "roas_meta": 2.38,
+      "teste": {
+        "dias": 14,
+        "verba_dia": 30,
+        "verba": 420,
+        "amostras": 45,
+        "plataforma": 39,
+        "total": 504
+      },
+      "vendas_na_meta": 23,
+      "vendas_no_equilibrio": 16,
+      "parada": "pausar o conjunto que gastar US$ 39 (1,5x o CPA de equilíbrio) sem venda; matar o teste se, em 7 dias e US$ 210 gastos, o CPA médio estiver acima de US$ 35 ou o CTR do link abaixo de 0,8%",
+      "g3": "passa: margem positiva nos dois cenários (só core US$ 23,80; com bump US$ 26,00)"
+    },
+    "troca_tamanho": "Política 'Right Size Guarantee': até 30 dias, se o peitoral não servir, o cliente manda uma foto com a medida do peito e recebe o tamanho certo de graça; não precisa devolver o primeiro. Custo já está no P&L (reserva de US$ 1,44 por pedido). Guia de medidas na PDP com 3 passos (peito atrás das patas, pescoço, peso) e tabela por raça.",
+    "paleta": {
+      "bg": "#F7F4EE",
+      "bg2": "#EDE6D8",
+      "primary": "#1F3B4D",
+      "accent": "#E8833A",
+      "ink": "#1A1D1F",
+      "good": "#3E7A57",
+      "line": "#DDD3C2"
+    },
+    "fontes": {
+      "titulo": "Inter Bold",
+      "corpo": "Inter"
+    },
+    "announcement": "Right Size Guarantee: wrong fit? We ship the right size free · Free US shipping",
+    "politicas": {
+      "frete": "Frete grátis nos EUA; processamento 1 a 3 dias úteis; entrega 7 a 12 dias úteis (envio internacional rastreado)",
+      "troca": "Right Size Guarantee 30 dias, reenvio grátis sem devolução",
+      "garantia": "60 dias de satisfação ou dinheiro de volta (padrão do nicho: 60 a 90 dias)"
+    }
+  },
+  "portoes": {
+    "G1_demanda": "pass: 66 mil buscas/mês só em 'dog harness' (+14%), 937 anúncios ativos e anúncio antipuxão de 829 dias ainda no ar",
+    "G2_catalogo": "warn: herói + patch + guia elástica; o catálogo cresce por raça (páginas) e por acessório de passeio, mas depende de tamanho",
+    "G3_criativos": "pass: Little Dog Co. roda 864 variações com 20 textos; ângulos claros (raça, ombro, coleira machuca, reflexo de oposição)",
+    "G4_economia": "warn: sobra US$ 26 por pedido; fecha com CPA até US$ 26, meta US$ 18; benchmark geral de CPA é US$ 38",
+    "G5_janela": "warn: nicho perene e crescendo, mas EUA tem dropship grande (Dogshood 425 mil visitas); entrar por ângulo, não pelo termo genérico",
+    "G6_vantagem": "pass: ninguém promete tamanho certo sem devolução; Little Dog Co. cobra a troca",
+    "G7_operacao": "pass: 1 país, 1 herói, envio da China, sem estoque; o único processo novo é o reenvio de tamanho"
+  }
+}

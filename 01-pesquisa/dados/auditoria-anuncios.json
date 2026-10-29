@@ -1,0 +1,128 @@
+{
+  "data": "2026-10-29",
+  "fonte": "API oficial da Meta (ads_archive, por page_id) + Biblioteca publica (raspagem por page_id, ACTIVE e ALL, teto de 500). Cada pagina usa o maior valor entre as duas fontes e a loja soma as paginas.",
+  "lojas": [
+    {
+      "loja": "Dogshood (e Tailo)",
+      "dominio": "dogshood.com",
+      "metodo": "dominio",
+      "page_ids": [
+        "128514970341968",
+        "1283880841480589",
+        "1308603385675580"
+      ],
+      "tentativas": [
+        "linkDomain dos anuncios minerados (API + raspagem)",
+        "search_terms=dogshood.com (ALL, US+CA+GB+AU+NZ+IE+DE+FR)",
+        "search_terms=dogshood (ALL)",
+        "nome da marca"
+      ],
+      "reportado": {
+        "ativos": 582,
+        "historico": 609
+      },
+      "biblioteca": {
+        "ativos": 582,
+        "historico": 609
+      },
+      "nota": "Dogshood (128514970341968): 74 ativos, 101 no histórico [API 0/27 · Biblioteca pública 74/101]; Tailo Dogwear (1283880841480589): 492 ativos, 492 no histórico [API 0/0 · Biblioteca pública 492/492]; Happy Dog Walks (1308603385675580): 16 ativos, 16 no histórico [API 0/0 · Biblioteca pública 16/16]. Regra: maior valor por página entre a API oficial e a Biblioteca pública; a loja soma as páginas."
+    },
+    {
+      "loja": "PawlyLab",
+      "dominio": "betterdoglife.com",
+      "metodo": "dominio",
+      "page_ids": [
+        "826756917182160",
+        "1050703328115345",
+        "1307878399085886"
+      ],
+      "tentativas": [
+        "linkDomain dos anuncios minerados (API + raspagem)",
+        "search_terms=betterdoglife.com (ALL, US+CA+GB+AU+NZ+IE+DE+FR)",
+        "search_terms=betterdoglife (ALL)",
+        "nome da marca"
+      ],
+      "reportado": {
+        "ativos": 126,
+        "historico": 694
+      },
+      "biblioteca": {
+        "ativos": 126,
+        "historico": 694
+      },
+      "nota": "PawlyLab Co. (826756917182160): 105 ativos, 583 no histórico [API 90/583 · Biblioteca pública 105/500]; Pawly Lab Co. (1050703328115345): 21 ativos, 80 no histórico [API 21/80 · Biblioteca pública 0/70]; Pawly Labs Co (1307878399085886): 0 ativos, 31 no histórico [API 0/31 · Biblioteca pública não rodada para esta página]. Regra: maior valor por página entre a API oficial e a Biblioteca pública; a loja soma as páginas."
+    },
+    {
+      "loja": "Little Dog Co.",
+      "dominio": "littledogco.store",
+      "metodo": "dominio",
+      "page_ids": [
+        "1205491262650471"
+      ],
+      "tentativas": [
+        "linkDomain dos anuncios minerados (API + raspagem)",
+        "search_terms=littledogco.store (ALL, US+CA+GB+AU+NZ+IE+DE+FR)",
+        "search_terms=littledogco (ALL)",
+        "nome da marca"
+      ],
+      "reportado": {
+        "ativos": 500,
+        "historico": 500
+      },
+      "biblioteca": {
+        "ativos": 500,
+        "historico": 500
+      },
+      "nota": "Little Dog Co. (1205491262650471): 500 ativos, 500 no histórico [API 0/377 · Biblioteca pública 500/500]. Regra: maior valor por página entre a API oficial e a Biblioteca pública; a loja soma as páginas. Contém piso: o número real pode ser maior. Piso: a Biblioteca publica bateu o teto de 500 e a API oficial nao expoe esses anuncios so-EUA; o numero real pode ser maior."
+    },
+    {
+      "loja": "FourPaw",
+      "dominio": "fourpawco.com",
+      "metodo": "dominio",
+      "page_ids": [
+        "1280618591794238",
+        "1299437793258245"
+      ],
+      "tentativas": [
+        "linkDomain dos anuncios minerados (API + raspagem)",
+        "search_terms=fourpawco.com (ALL, US+CA+GB+AU+NZ+IE+DE+FR)",
+        "search_terms=fourpawco (ALL)",
+        "nome da marca"
+      ],
+      "reportado": {
+        "ativos": 124,
+        "historico": 240
+      },
+      "biblioteca": {
+        "ativos": 124,
+        "historico": 240
+      },
+      "nota": "FourPaw (1280618591794238): 124 ativos, 239 no histórico [API 0/99 · Biblioteca pública 124/239]; Dog Owner Magazine (1299437793258245): 1 ativos, 1 no histórico [API 0/0 · Biblioteca pública não rodada para esta página · piso: 1 anúncios ativos vistos na mineração]. Regra: maior valor por página entre a API oficial e a Biblioteca pública; a loja soma as páginas."
+    },
+    {
+      "loja": "VivaPaws",
+      "dominio": "try-vivapaws.com",
+      "metodo": "dominio",
+      "page_ids": [
+        "1280598645143556",
+        "1077371572134414",
+        "1313284225191989"
+      ],
+      "tentativas": [
+        "linkDomain dos anuncios minerados (API + raspagem)",
+        "search_terms=try-vivapaws.com (ALL, US+CA+GB+AU+NZ+IE+DE+FR)",
+        "search_terms=try-vivapaws (ALL)",
+        "nome da marca"
+      ],
+      "reportado": {
+        "ativos": 57,
+        "historico": 217
+      },
+      "biblioteca": {
+        "ativos": 57,
+        "historico": 217
+      },
+      "nota": "VivaPaws (1280598645143556): 54 ativos, 200 no histórico [API 54/200 · Biblioteca pública 26/160]; Jessica Rivers (1077371572134414): 3 ativos, 4 no histórico [API 3/4 · Biblioteca pública 0/0]; Dog Health Matters (1313284225191989): 0 ativos, 13 no histórico [API 0/13 · Biblioteca pública não rodada para esta página]. Regra: maior valor por página entre a API oficial e a Biblioteca pública; a loja soma as páginas."
+    }
+  ]
+}
